@@ -8,7 +8,8 @@
 	</div>
 	<footer class="template-footer">
 		<div class="footer-info">
-			{% include "includes/footer.twig" %}
+			{{widget('profile', 'header-social', { 'profileType':'socialicons'})|raw}}
+			{{widget('profile', 'header-copyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
 		</div>
 	</footer>
 </header>
