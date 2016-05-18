@@ -11,7 +11,7 @@
 	<div role="main">
 
 		<!-- MAIN WIDGET ZONE -->
-		{{widget('ecomproduct', 'singleproduct', {})|raw}} 
+	   	{{zone('main')|raw}}
 
 	</div>
 	<!-- END MAIN SECTION -->
@@ -43,7 +43,7 @@
 
 <script>
 $('#ecomscroll').click(function(e) {
-	e.preventDefault();   
+	e.preventDefault();
 	var id = e.target.id;
         if(id == 'ecomscroll'){
             $('ul.product-gallery li:first').appendTo('ul.product-gallery');
