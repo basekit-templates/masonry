@@ -1,4 +1,6 @@
 <footer class="template-footer">
 	{{widget('profile', 'header-social-footer', { 'profileType':'socialicons'})|raw}}
-	{{widget('profile', 'header-copyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+	{{widget('content', 'header-copyright', {
+        content: '<p>© Copyright 2016</p>'
+    })|raw}}
 </footer>
