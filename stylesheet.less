@@ -15,10 +15,6 @@
 // 1. LESS Includes
 // ----------------------------
 
-.rhys-jp {
-    display: none;
-}
-
 
 // BK LESS Framework Include
 // -------------------------
@@ -61,6 +57,7 @@
     -moz-transition:    @prop;
     -ms-transition:     @prop;
     -o-transition:      @prop;
+    transition:         @prop;
 }
 
 .animation (@name, @duration: 2s, @ease: ease, @time: infinite, @direction: normal) {
@@ -482,6 +479,7 @@ select::-ms-expand{
             -ms-transition:     height 0.75s ease-in-out, opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
             -o-transition:      height 0.75s ease-in-out, opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
             visibility: visible;
+            z-index: 9999;
         }
     }
     &:last-child {
@@ -549,11 +547,11 @@ select::-ms-expand{
         -webkit-transform: translateY(-20px);
         transform: translateY(-20px);
         visibility: hidden;
-        transition: height 0.75s ease-in-out, opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
-        -moz-transition:    height 0.75s ease-in-out, opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
+        -webkit-transition: height 0.75s ease-in-out, opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
+         -moz-transition:    height 0.75s ease-in-out, opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
         -ms-transition:     height 0.75s ease-in-out, opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
         -o-transition:      height 0.75s ease-in-out, opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
-        -webkit-transition-: height 0.75s ease-in-out, opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
+        transition: height 0.75s ease-in-out, opacity 0.75s ease-in-out, visibility 0.75s ease-in-out;
     }
     // Dropdown list items
     .navigation-item--child .item-name {
