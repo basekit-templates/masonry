@@ -1,5 +1,6 @@
 {
     "name": "Masonry",
+    "versionTenCompatible": 1,
     "thumbnail": "thumbnail.png",
     "screenshot" : "masonry-screenshot.jpg",
     "widgetVersion": 2,
