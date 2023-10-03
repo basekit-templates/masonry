@@ -14,6 +14,8 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 	{% include basekit.headScript %}
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body class="{{ page.backgroundClass }}" {{ isV10sSite ? 'id="migrated-site"' : '' }}>
 
@@ -21,9 +23,6 @@
 	{% endblock %}
 
     {% include basekit.bodyScript %}
-
-	<!-- jQuery -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <!-- Fast Click -->
     <script src="{{ asset('js/fastclick.js')}}"></script>
